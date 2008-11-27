@@ -1,0 +1,10 @@
+.crumbs
+  =link_to 'Forums', slice_url(:forumtastic, :home)
+  %span.arrow &rarr;
+  =link_to @forum.title, slice_url(:forumtastic, :forum, @forum) 
+  %span.arrow &rarr;
+  =link_to @topic.title, slice_url(:forumtastic, :forum_topic, @forum, @topic)
+%h1.space New Post
+=form_for :post, :action => slice_url(:forumtastic, :forum_topic_posts) do
+  .row=text_area :body, :class => "post_body"
+  =submit "Add"

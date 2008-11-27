@@ -1,0 +1,15 @@
+TODO:
+
+- Fix Forumtastic.description and Forumtastic.version
+- Fix LICENSE with your name
+- Fix Rakefile with your name and contact info
+- Add your code to lib/forumtastic.rb
+- Add your Merb rake tasks to lib/forumtastic/merbtasks.rb
+
+Remove anything that you don't need:
+
+- app/controllers/main.rb Forumtastic::Main controller
+- app/views/layout/forumtastic.html.erb
+- spec/controllers/main_spec.rb controller specs
+- public/* any public files
+- stubs/* any stub files

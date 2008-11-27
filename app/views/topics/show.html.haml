@@ -1,0 +1,22 @@
+-throw_content(:title, @topic.title)
+-throw_content(:right) do
+  -if session.authenticated? && ( session.user.admin? || session.user == @topic.user )
+    =link_to "Edit Topic", slice_url(:forumtastic, :edit_forum_topic, @forum, @topic)
+    =" | "
+  -if session.authenticated?
+    =link_to "New Post", slice_url(:forumtastic, :new_forum_topic_post, @forum, @topic)
+.crumbs
+  =link_to "Forums", slice_url(:forumtastic, :forums)
+  %span.arrow &rarr;
+  =link_to @forum.title, slice_url(:forumtastic, :forum, @forum)
+  %span.arrow &rarr;
+%h2=@topic.title
+%ul#posts
+  -@posts.each do |post|
+    %li[post]
+      .user
+        %div=post.created_at.strftime('%b %d, %H:%M %P')
+        %div=link_to "<strong>#{post.user.name}</strong>", slice_url(:forumtastic, :user, post.user)
+        .subtitle=pluralize post.user.posts.count, 'post'
+      .body=post.body_html
+=paginate @posts

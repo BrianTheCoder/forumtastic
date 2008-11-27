@@ -1,0 +1,190 @@
+Wed, 26 Nov 2008 19:14:34 GMT  ~  info  ~  Logfile created
+ ~ No database.yml file found in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config, assuming database connection(s) established in the environment file in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config/environments
+ ~ Found slice 'forumtastic' in search path at lib/forumtastic.rb
+ ~ Loaded slice 'Forumtastic' ...
+ ~ Activating slice 'Forumtastic' ...
+ ~ Started request handling: Wed Nov 26 13:14:36 -0600 2008
+ ~ The routes have not been compiled yet - (Merb::Router::NotCompiledError)
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/router.rb:162:in `match'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/router.rb:139:in `route_for'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/request.rb:116:in `find_route!'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/dispatcher.rb:56:in `handle'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/rack/application.rb:17:in `call_without_sass'
+/opt/local/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/plugin/merb.rb:34:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/test/helpers/request_helper.rb:41:in `request'
+/opt/local/lib/ruby/gems/1.8/gems/webrat-0.3.2/lib/webrat/merb.rb:60:in `request'
+./spec/requests/topics_spec.rb:5
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:43:in `instance_eval'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:43:in `eval_each_fail_fast'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:42:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:42:in `eval_each_fail_fast'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:208:in `run_before_each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:302:in `each_ancestor_example_group_class'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:301:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:301:in `each_ancestor_example_group_class'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:207:in `run_before_each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:94:in `before_each_example'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:14:in `execute'
+/opt/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:12:in `execute'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:245:in `execute_examples'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:244:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:244:in `execute_examples'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:141:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/example_group_runner.rb:22:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/example_group_runner.rb:21:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/example_group_runner.rb:21:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/options.rb:115:in `run_examples'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/command_line.rb:10:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/bin/spec:4
+/opt/local/bin/spec:19:in `load'
+/opt/local/bin/spec:19
+ ~ Params: {}
+ ~ 
+
+ ~ No database.yml file found in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config, assuming database connection(s) established in the environment file in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config/environments
+ ~ Found slice 'forumtastic' in search path at lib/forumtastic.rb
+ ~ Loaded slice 'Forumtastic' ...
+ ~ Activating slice 'Forumtastic' ...
+ ~ Started request handling: Wed Nov 26 13:15:31 -0600 2008
+ ~ The routes have not been compiled yet - (Merb::Router::NotCompiledError)
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/router.rb:162:in `match'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/router.rb:139:in `route_for'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/request.rb:116:in `find_route!'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/dispatcher.rb:56:in `handle'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/rack/application.rb:17:in `call_without_sass'
+/opt/local/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/plugin/merb.rb:34:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/test/helpers/request_helper.rb:41:in `request'
+/opt/local/lib/ruby/gems/1.8/gems/webrat-0.3.2/lib/webrat/merb.rb:60:in `request'
+./spec/requests/forums_spec.rb:5
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:43:in `instance_eval'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:43:in `eval_each_fail_fast'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:42:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:42:in `eval_each_fail_fast'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:208:in `run_before_each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:302:in `each_ancestor_example_group_class'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:301:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:301:in `each_ancestor_example_group_class'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:207:in `run_before_each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:94:in `before_each_example'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:14:in `execute'
+/opt/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:12:in `execute'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:245:in `execute_examples'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:244:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:244:in `execute_examples'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:141:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/example_group_runner.rb:22:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/example_group_runner.rb:21:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/example_group_runner.rb:21:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/options.rb:115:in `run_examples'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/command_line.rb:10:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/bin/spec:4
+/opt/local/bin/spec:19:in `load'
+/opt/local/bin/spec:19
+ ~ Params: {}
+ ~ 
+
+ ~ No database.yml file found in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config, assuming database connection(s) established in the environment file in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config/environments
+ ~ Found slice 'forumtastic' in search path at lib/forumtastic.rb
+ ~ Loaded slice 'Forumtastic' ...
+ ~ Activating slice 'Forumtastic' ...
+ ~ No database.yml file found in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config, assuming database connection(s) established in the environment file in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config/environments
+ ~ Found slice 'forumtastic' in search path at lib/forumtastic.rb
+ ~ Loaded slice 'Forumtastic' ...
+ ~ Activating slice 'Forumtastic' ...
+ ~ Started request handling: Wed Nov 26 13:17:41 -0600 2008
+ ~ The routes have not been compiled yet - (Merb::Router::NotCompiledError)
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/router.rb:162:in `match'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/router.rb:139:in `route_for'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/request.rb:116:in `find_route!'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/dispatcher.rb:56:in `handle'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/rack/application.rb:17:in `call_without_sass'
+/opt/local/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/plugin/merb.rb:34:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/test/helpers/request_helper.rb:41:in `request'
+/opt/local/lib/ruby/gems/1.8/gems/webrat-0.3.2/lib/webrat/merb.rb:60:in `request'
+./spec/requests/forums_spec.rb:9
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:43:in `instance_eval'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:43:in `eval_each_fail_fast'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:42:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:42:in `eval_each_fail_fast'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:208:in `run_before_each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:302:in `each_ancestor_example_group_class'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:301:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:301:in `each_ancestor_example_group_class'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:207:in `run_before_each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:94:in `before_each_example'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:14:in `execute'
+/opt/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:12:in `execute'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:245:in `execute_examples'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:244:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:244:in `execute_examples'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:141:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/example_group_runner.rb:22:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/example_group_runner.rb:21:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/example_group_runner.rb:21:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/options.rb:115:in `run_examples'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/command_line.rb:10:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/bin/spec:4
+/opt/local/bin/spec:19:in `load'
+/opt/local/bin/spec:19
+ ~ Params: {}
+ ~ 
+
+ ~ No database.yml file found in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config, assuming database connection(s) established in the environment file in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config/environments
+ ~ Found slice 'forumtastic' in search path at lib/forumtastic.rb
+ ~ Loaded slice 'Forumtastic' ...
+ ~ Activating slice 'Forumtastic' ...
+ ~ Reaping Workers
+ ~ No database.yml file found in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config, assuming database connection(s) established in the environment file in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config/environments
+ ~ Found slice 'forumtastic' in search path at lib/forumtastic.rb
+ ~ Loaded slice 'Forumtastic' ...
+ ~ Activating slice 'Forumtastic' ...
+ ~ No database.yml file found in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config, assuming database connection(s) established in the environment file in /Users/williamsmith/code/ruby/merb-slices/forumtastic/config/environments
+ ~ Found slice 'forumtastic' in search path at lib/forumtastic.rb
+ ~ Loaded slice 'Forumtastic' ...
+ ~ Activating slice 'Forumtastic' ...
+ ~ Started request handling: Wed Nov 26 13:23:13 -0600 2008
+ ~ The routes have not been compiled yet - (Merb::Router::NotCompiledError)
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/router.rb:162:in `match'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/router.rb:139:in `route_for'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/request.rb:116:in `find_route!'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/dispatcher.rb:56:in `handle'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/rack/application.rb:17:in `call_without_sass'
+/opt/local/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/plugin/merb.rb:34:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0.1/lib/merb-core/test/helpers/request_helper.rb:41:in `request'
+/opt/local/lib/ruby/gems/1.8/gems/webrat-0.3.2/lib/webrat/merb.rb:60:in `request'
+./spec/requests/forums_spec.rb:5
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:43:in `instance_eval'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:43:in `eval_each_fail_fast'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:42:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:42:in `eval_each_fail_fast'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:208:in `run_before_each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:302:in `each_ancestor_example_group_class'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:301:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:301:in `each_ancestor_example_group_class'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:207:in `run_before_each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:94:in `before_each_example'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:14:in `execute'
+/opt/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_methods.rb:12:in `execute'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:245:in `execute_examples'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:244:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:244:in `execute_examples'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/example/example_group_methods.rb:141:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/example_group_runner.rb:22:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/example_group_runner.rb:21:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/example_group_runner.rb:21:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/options.rb:115:in `run_examples'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/lib/spec/runner/command_line.rb:10:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.1.11/bin/spec:4
+/opt/local/bin/spec:19:in `load'
+/opt/local/bin/spec:19
+ ~ Params: {}
+ ~ 
+

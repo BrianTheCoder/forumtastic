@@ -1,0 +1,12 @@
+.crumbs
+  =link_to 'Forums', slice_url(:forumtastic, :home)
+  %span.arrow &rarr;
+  =link_to @forum.title, slice_url(:forumtastic, :forum, @forum) 
+  %span.arrow &rarr;
+%h1.space New Topic
+=error_messages_for :topic 
+=form_for :topic, :action  => slice_url(:forumtastic, :forum_topics, @forum) do
+  =partial "form"
+  =submit "Post Topic"
+  or
+  =link_to 'Cancel', slice_url(:forumtastic, :forum, @forum)

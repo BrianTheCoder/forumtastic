@@ -1,0 +1,40 @@
+!!! Strict
+%html{ html_attrs("en_us") }
+  %head
+    %title=thrown_content?(:title) ? "Forumtastic! - #{catch_content(:title)}" : "Forumtastic!"
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "content-type" }/
+    =css_include_tag "master"
+  %body
+    #header
+      .container
+        %h1=link_to 'Forumtastic!', slice_url(:forumtastic, :forums)
+        %ul#nav
+          %li=link_to 'Forums', slice_url(:forumtastic, :forums), :rel => 'home'
+          %li=link_to 'Users', slice_url(:forumtastic, :users)
+          %li#search.hide
+            =form :action => slice_url(:forumtastic, :posts), :method => 'get' do
+              =text_field :name => :q, :value => params[:q], :size => 15, :id => :search_box
+          %li=link_to 'Search', "#", :href => slice_url(:forumtastic, :posts), :id => 'search-link'
+          -if session.authenticated? 
+            %li.login=link_to session.user.name, slice_url(:forumtastic, :user,session.user)
+            / %li.logout=link_to 'Settings'[:settings_title], settings_path 
+            %li.logout=link_to 'Logout', slice_url(:forumtastic, :logout)
+          -else
+            %li=link_to 'Signup', slice_url(:forumtastic, :new_user)
+            %li=link_to 'Login', slice_url(:forumtastic, :login)
+    #container
+      #content
+        =catch_content :for_layout
+      #right
+        =catch_content :right
+    #footer
+      .container
+        %p.disclaim
+          %strong It's not just good, it's Forumtastic.
+        %p.credit
+          =link_to "Forumatastic", ""
+          © 2006 
+          =link_to "Brian Smith", "http://brainthecoder.com"
+          of
+          =link_to "Downtown Cartel", "http://downtowncartel.com"
+    =js_include_tag "jquery", "jquery.form", "jquery.livequery", "jquery.pageless", "master"

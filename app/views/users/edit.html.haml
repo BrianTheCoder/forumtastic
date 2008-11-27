@@ -1,0 +1,23 @@
+=error_messages_for @user
+=form_for @user, :action => slice_url(:forumtastic, :user, @user), :method => :put do
+  .required
+    %h3 Required
+    .row
+      %label{ :for => :user_name } Name
+      .hint What you want to be called on the forum
+      =text_field :name
+    .row
+      %label{ :for => :user_email } Email
+      .hint Where your mom forwards you chain letters
+      =text_field :email
+    %div=submit "Signup"
+  .optional
+    %h3 Optional
+    .row
+      %label{ :for => :user_website } Website
+      .hint This could either be your site or one you like
+      =text_field :website
+    .row
+      %label{ :for => :user_bio } Bio
+      .hint Tell us a little about yourself, its less weird that way
+      =text_area :bio

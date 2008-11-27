@@ -1,0 +1,10 @@
+=form :action => slice_url(:forumtastic, :perform_login), :method => :put do
+  .row
+    %label{ :for => :email } Email
+    .hint This is where you get spam
+    =text_field :email
+  .row
+    %label{ :for => :password } Password
+    .hint This is top super secret
+    =password_field :password, :class => "text"
+  %div=submit "Login"

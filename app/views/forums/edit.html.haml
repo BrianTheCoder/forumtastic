@@ -1,0 +1,10 @@
+.crumbs
+  =link_to 'Forums', slice_url(:forumtastic, :forums)
+  %span.arrow &rarr;
+%h1.space="Edit #{@forum.title}"
+=form_for :forum, :action  =>  slice_url(:forumtastic, :forum, @forum), :method => :put do
+  =partial "form"
+  %div
+    =submit 'Save Forum'
+    or 
+    =link_to 'Cancel', slice_url(:forumtastic, :forums)

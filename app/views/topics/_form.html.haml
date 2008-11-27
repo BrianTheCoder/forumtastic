@@ -1,0 +1,22 @@
+.row
+  %label{ :for => :topic_title } Title
+  .hint What do you want to talk about?
+  =text_field :title
+/ -for_moderators_of @forum do
+/   %label{ :for => :topic_sticky }
+/     =check_box :sticky
+/     Sticky
+/   %label{ :for => :topic_locked }
+/     =check_box :locked
+/     Locked
+-if @topic.new_record?
+  .row
+    %label{ :for => :topic_body } Body
+    .hint This will be the body of the first post
+    =text_area :body
+/ -if admin? && !@topic.new_record? && forums = current_site.ordered_forums 
+/   -if forums.size > 1
+/     .row
+/       %label{ :for => :topic_forum_id} Forum
+/       .hint Select the forum to move this post this topic to
+/       =select :forum_id, :collection => Forum.all, :text_method => :title, :value_method => :id

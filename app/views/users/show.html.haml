@@ -1,0 +1,26 @@
+-throw_content(:title, @user.name)
+-throw_content(:right) do
+  -if session.authenticated? && ( session.user == @user || session.user.admin? )
+    =link_to "Edit", slice_url(:forumtastic, :edit_user, @user)
+  -if session.authenticated? && session.user.admin? && session.user != @user
+    %h6 Admin
+    =form_for @user, :action => slice_url(:forumtastic, :user, @user), :method => :put do
+      =hidden_field :admin, :value => true
+      =submit "Make Admin"
+#user
+  %h1=@user.name
+  %p.subtitle
+    %span=pluralize(@user.posts.count,'post')
+  %p.joined="Member since #{@user.created_at.strftime('%B %d, %Y')}"
+  %p.website=link_to @user.website, ( @user.website.match(/^http:\/\//) ? @user.website : "http://#{@user.website}")
+  .bio=@user.bio_html
+%h3 Posts
+%ul#user_posts
+  -@posts.each do |post|
+    %li
+      .info
+        .date=post.created_at.strftime('%B %d, %Y %H:%M %P')
+        .topic="Posted in #{link_to(post.topic.title, slice_url(:forumtastic, :forum_topic, post.topic.forum, post.topic))}"
+      .body=post.body_html
+=paginate @posts
+  

@@ -1,0 +1,14 @@
+.crumbs
+  =link_to 'Forums', slice_url(:forumtastic, :home)
+  %span.arrow &rarr;
+  =link_to @forum.title, slice_url(:forumtastic, :forum, @forum) 
+  %span.arrow &rarr;
+%h1.space Edit Topic
+=error_messages_for :topic 
+=form_for :topic, :action => slice_url(:forumtastic, :forum_topic, @forum, @topic), :method => :put do
+  =partial "form"
+  =submit "Save Changes"
+  or
+  =link_to 'Cancel', slice_url(:forumtastic, :forum_topic, @forum, @topic)
+=form_for :topic, :action => slice_url(:forumtastic, :forum_topic, @forum, @topic), :method => :delete do
+  =submit "Delete"

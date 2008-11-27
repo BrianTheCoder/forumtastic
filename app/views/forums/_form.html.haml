@@ -1,0 +1,8 @@
+.row
+  %label{ :for => :forum_title} Name
+  .hint The title of your forum
+  =text_field :title, :class => "primary"
+.row
+  %label{ :for => :forum_description } Description
+  .hint Help people know what this forum is about
+  =text_area :description

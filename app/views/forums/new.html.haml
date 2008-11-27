@@ -1,0 +1,10 @@
+.crumbs
+  =link_to "Forums", slice_url(:forumtastic, :forums)
+  %span.arrow &rarr;
+%h1.space New Forum
+=form_for :forum, :action => slice_url(:forumtastic, :forums) do
+  =partial "form"
+  %div
+    =submit 'Create'
+    or 
+    =link_to 'Cancel', slice_url(:forumtastic, :forums)

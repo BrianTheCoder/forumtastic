@@ -1,0 +1,35 @@
+-throw_content(:title, @forum.title)
+-throw_content(:right) do
+  -if session.authenticated? 
+    =link_to "New Topic", slice_url(:forumtastic, :new_forum_topic, @forum)
+  -else
+    ="#{link_to("Login", slice_url(:forumtastic, :login))} so you can participate in the conversation"
+.crumbs
+  =link_to "Forums", slice_url(:forumtastic, :forums)
+  %span.arrow &rarr;
+%h1=@forum.title
+.subtitle
+  ="#{pluralize(@forum.topics.count, 'topic')}, #{pluralize(@forum.topics.posts.count, 'post')}"
+%table{ :border => "0", :cellspacing => "0", :cellpadding => "0"}
+  %thead
+    %tr
+      %th{ :colspan => 3 } Topic
+      %th{ :width => '1%' } Posts
+      %th{ :width => '1%' } Views
+      %th Last Post
+  %tbody
+    -@topics.each do |topic|
+      %tr
+        %td.sticky=image_tag "clearbits/comment.gif", :class => "icon grey", :title => 'No recent activity'
+        %td.topic_info{ :colspan => (session.authenticated? && session.user.admin?) ? 1 : 2}
+          =link_to topic.title, slice_url(:forumtastic, :forum_topic, @forum, topic)
+        -if session.authenticated? && session.user.admin?
+          %td.edit{ :width => '1%' }=link_to "Edit", slice_url(:forumtastic, :edit_forum_topic, @forum, topic)
+        %td.posts=topic.post_count
+        %td.views
+        %td.latest
+          =topic.last_post.created_at.strftime('%b %d, %H:%M %P')
+          %br
+          ="by <strong>#{link_to(topic.last_post.user.name, slice_url(:forumtastic, :user, topic.last_post.user))}</strong>"
+          ="(#{link_to('view', slice_url(:forumtastic, :forum_topic, @forum, topic, :fragment => "forumtastic_post_#{topic.last_post.id}"))})"
+=paginate @topics
