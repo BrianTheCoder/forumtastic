@@ -7,7 +7,7 @@ module Forumtastic
     
     def index
       provides :atom, :rss
-      @posts = (@parent ? @parent.posts : Post).all
+      @posts = (@parent ? @parent.posts : Post).paginate(:page => params[:page], :order => [:created_at.asc])
       display @posts
     end
 

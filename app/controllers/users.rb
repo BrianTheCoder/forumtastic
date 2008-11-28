@@ -35,7 +35,7 @@ module Forumtastic
     def create
       @user = User.new(params['forumtastic::user'])
       if @user.save
-        redirect slice_url(:user, @user), :message => {:notice => "User was successfully created"}
+        redirect slice_url(:forumtastic, :user, @user), :message => {:notice => "User was successfully created"}
       else
         message[:error] = "User failed to be created"
         render :new
@@ -46,7 +46,7 @@ module Forumtastic
       @user = User.get(params[:id])
       raise NotFound unless @user
       if @user.update_attributes(params['forumtastic::user'])
-         redirect slice_url(:user, @user)
+         redirect slice_url(:forumtastic, :user, @user)
       else
         display @user, :edit
       end
@@ -56,7 +56,7 @@ module Forumtastic
       @user = User.get(params[:id])
       raise NotFound unless @user
       if @user.destroy
-        redirect slice_url(:users)
+        redirect slice_url(:forumtastic, :users)
       else
         raise InternalServerError
       end

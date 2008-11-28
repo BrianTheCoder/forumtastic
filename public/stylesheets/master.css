@@ -247,6 +247,12 @@ body {
     color: #fff; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     color: #191410; }
+  body a {
+    color: #7a7718; }
+    body a:visited {
+      color: #9e9a51; }
+    body a:hover {
+      color: #191410; }
 
 #header {
   background: #9e9a51;
@@ -388,39 +394,45 @@ form .optional {
     width: 300px;
     height: 165px; }
 
+table th {
+  background: #9e9a51;
+  color: #f5f2bc; }
 table tr td {
   border-bottom: 1px solid #ccc; }
 table tr:hover {
-  background: #efefef; }
+  background: #f5f2bc; }
 table a.title, table td.topic_info {
   font-size: 1.2em; }
 table td.edit, table td.latest {
   vertical-align: top; }
 table .count {
   font-size: 0.9em;
-  color: #999; }
+  color: #91b399; }
 table td.info p {
   margin: 0; }
 table td.posts, table td.views {
   text-align: center; }
 
-ul#posts {
+.crumbs {
+  color: #91b399; }
+
+#posts {
   list-style: none;
   margin: 0; }
-  ul#posts li {
+  #posts li {
     overflow: hidden;
     margin-bottom: 10px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #91b399;
     padding-top: 10px; }
-  ul#posts .user {
+  #posts .user {
     float: left;
     overflow: hidden;
     width: 16%;
     margin-right: 0.833em;
-    background: #dedede;
+    background: #f5f2bc;
     padding: 5px 5px 900px 5px;
     margin-bottom: -900px; }
-  ul#posts .body {
+  #posts .body {
     float: left;
     overflow: hidden;
     width: 79%;
@@ -489,7 +501,7 @@ body h1 {
 
 .subtitle {
   margin-bottom: .5em;
-  color: #999; }
+  color: #91b399; }
 
 .pagination {
   margin-bottom: 1em; }

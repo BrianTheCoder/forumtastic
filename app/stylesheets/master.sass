@@ -5,6 +5,12 @@ body
   +blueprint-interaction
   h1, h2, h3, h4, h5, h6
     :color = !brown
+  a
+    :color = !olive
+    &:visited
+      :color = !khaki
+    &:hover
+      :color = !brown
 #header
   :background = !khaki
   :margin-bottom 1em
@@ -69,34 +75,40 @@ form
       :height 165px
 
 table
+  th
+    :background = !khaki
+    :color = !cream
   tr td
     :border-bottom 1px solid #ccc
   tr:hover
-    :background #efefef
+    :background = !cream
   a.title, td.topic_info
     :font-size 1.2em
   td.edit, td.latest
     :vertical-align top
   .count
     :font-size 0.9em
-    :color #999
+    :color = !seafoam
   td.info
     p
       :margin 0
   td.posts, td.views
     :text-align center
     
-ul#posts
+.crumbs
+  :color = !seafoam
+    
+#posts
   :list-style none
   :margin 0
   li
     :overflow hidden
     :margin-bottom 10px
-    :border-top 1px solid #ccc
+    :border-top = 1px solid !seafoam
     :padding-top 10px
   .user
     +column(4)
-    :background #dedede
+    :background = !cream
     :padding 5px 5px 900px 5px
     :margin-bottom -900px
   .body
@@ -163,6 +175,6 @@ body h1
   :float right
 .subtitle
   :margin-bottom .5em
-  :color #999
+  :color = !seafoam
 .pagination
   :margin-bottom 1em
